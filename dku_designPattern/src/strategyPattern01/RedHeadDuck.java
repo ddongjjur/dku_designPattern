@@ -1,4 +1,4 @@
-package strategyPattern;
+package strategyPattern01;
 
 public class RedHeadDuck extends Duck {
 	public RedHeadDuck() {

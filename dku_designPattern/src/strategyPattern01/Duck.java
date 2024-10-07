@@ -1,4 +1,4 @@
-package strategyPattern;
+package strategyPattern01;
 
 public abstract class Duck {
 	protected FlyBehavior flyBehavior;
