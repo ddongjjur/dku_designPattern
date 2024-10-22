@@ -1,8 +1,8 @@
 package factoriesPattern04;
 
-public class PizzaStore {
+public abstract class PizzaStore {
 	
-	SimplePizzaFactory factory;
+//	SimplePizzaFactory factory;
 	
 //	public PizzaStore(SimplePizzaFactory factory) {
 //		this.factory = factory;
@@ -12,7 +12,8 @@ public class PizzaStore {
 			
 		Pizza pizza;
 		
-		pizza = SimplePizzaFactory.createPizza(type);	// SimplePizzaFactory를 Static으로 만듦으로 인한 코드 수정
+//		pizza = SimplePizzaFactory.createPizza(type);	// SimplePizzaFactory를 Static으로 만듦으로 인한 코드 수정 다만 메모리 관리에 영향을 준다.
+		pizza = createPizza(type);
 		
 		pizza.prepare();
 		pizza.bake();
@@ -22,6 +23,8 @@ public class PizzaStore {
 		return pizza;
 		
 	}
+
+	public abstract Pizza createPizza(String type);
 	
 	
 

@@ -13,6 +13,6 @@ public abstract class Pizza {
 	}
 	
 	public void box() {
-		System.out.println("Boxing pizza");
+		System.out.println("Boxing pizza\n");
 	}
 }
