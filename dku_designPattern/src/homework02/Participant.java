@@ -1,20 +1,26 @@
 package homework02;
 
-public class Participant {
-    private String name = null;
-    private String buffer = "";
+public abstract class Participant implements Observer {
+	protected String name;		// protected로 상속받는 class 접근
+	protected String buffer = "";
 
-    public Participant(String name) {
-        this.name = name;
-    }
+	public Participant(String name) {
+		this.name = name;
+	}
 
-    public void display() {
-        System.out.println("[" + name + "]");
-        System.out.println(buffer);
-    }
+	public void display() {
+		System.out.println("[" + name + "]");
+		if (buffer.isEmpty()) {
+			System.out.println();
+		} 
+		
+		else {
+			System.out.print(buffer);
+		}
+		System.out.println(); // 출력 간 간격을 위한 빈 줄
+	}
 
-    public void inputln(String line) {
-        buffer += line;
-        buffer += "\n";
-    }   
+	@Override	// update()와 inputln() 함수들은 추상메소드
+	public abstract void update(String message);
+	public abstract void inputln(Subject subject, String message);
 }
