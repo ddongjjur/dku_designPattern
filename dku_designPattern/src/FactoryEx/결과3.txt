@@ -1,0 +1,20 @@
+Hello, Try This!
+--- Making a NY Style Clam Pizza ---
+Preparing NY Style Clam Pizza
+Tossing dough...
+Adding sauce...
+Adding toppings: 
+   Grated Reggiano Cheese
+   Fresh Clams from Long Island Sound
+Baking NY Style Clam Pizza
+Cutting NY Style Clam Pizza
+Boxing NY Style Clam Pizza
+--- Making a NY Style Sauce and Cheese Pizza ---
+Preparing NY Style Sauce and Cheese Pizza
+Tossing dough...
+Adding sauce...
+Adding toppings: 
+   Grated Reggiano Cheese
+Baking NY Style Sauce and Cheese Pizza
+Cutting NY Style Sauce and Cheese Pizza
+Boxing NY Style Sauce and Cheese Pizza
